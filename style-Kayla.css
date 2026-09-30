@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(239, 251, 255);
+    color: #535353;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+#header {
+    background-color: lightblue;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid rgb(133, 163, 181);
+}
+
+#header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+#header p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Navigation menu */
+.navigation {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    border-bottom: 1px solid #baedfe;
+}
+
+.navigation a {
+    color: #72bee4;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.navigation a:link,
+.navigation a:visited {
+    color: #599bd5;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: #7ed6f9;
+    text-decoration: underline;
+}
+
+/* Main content */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 35px auto;
+}
+
+.form-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #d3eef7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(80, 60, 110, 0.10);
+}
+
+.form-card h2 {
+    margin-top: 0;
+    color: #47787f;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666666;
+}
+
+/* Form layout */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #345e68;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #c3dfdf;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #fafeff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #88bbdf;
+    box-shadow: 0 0 0 3px rgba(118, 191, 199, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+}
+
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: normal;
+}
+
+.radio-label input,
+.checkbox-label input {
+    width: auto;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    background-color: #6aaeb8;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #538e9d;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #c7f3ff;
+    color: #3b6e70;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .navigation a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
+
